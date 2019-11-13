@@ -118,6 +118,14 @@ div.info{
 	left: 26%;
 	top: 40%;
 }
+/*Info del autor*/
+div.infoautor{
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	left: 26%;
+	top: 37%;
+}
 /*Titulo del libro, trilogias*/
 p.titulo{
 	color: grey;
@@ -129,6 +137,12 @@ p.autor{
 	font-size: 15px;
 	margin-bottom: 20%;
 }
+/*Info autor*/
+p.autor{
+	color: grey;
+	font-size: 15px;
+	margin-bottom: 10%;
+}
 /*Precio de libro, trilogias*/
 p.precio{
 	color: orange;
@@ -139,6 +153,14 @@ p.precio{
 /*Sinopsis del libro, trilogias*/
 p.sinopsis{
 	font-size: 13px;
+}
+/**/
+p.sinopsisautor{
+	font-size: 13px;
+}
+p.masLibros{
+	position: relative;
+	left: 5%;
 }
 
 
