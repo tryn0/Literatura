@@ -1,0 +1,224 @@
+/*Importación de fuente*/
+@font-face{
+	font-family: GoldenHills;
+	src: url(../fonts/GoldenHills.ttf) format('truetype');
+}
+
+/*Ocultando todas las barras de desplazamiento*/
+::-webkit-scrollbar {
+	display: none;
+}
+/*Cabecera*/
+/*Color de fondo y alto*/
+header#cabecera{
+	background-color: #9B9B9B;
+	height: 200px;
+}
+/*Logo de la cabecera, posicion, tamaño, espacio izquierda y arriba*/
+img#logo{
+	position: absolute;
+	width: 10%;
+	left: 1.25%;
+	top: 2.5%;
+}
+/*Primer texto a la derecha, fuente, posicion, tamaño, espacio derecha y arriba*/
+p#textoCabecera{
+	font-family: GoldenHills;
+	position: absolute;
+	font-size: 30px;
+	right: 3%;
+	top: 2%;
+}
+/*Mi nombre a la derecha, fuente, posicion, tamaño, espacio derecha y arriba*/
+p#nombreCabecera{
+	font-family: GoldenHills;
+	position: absolute;
+	font-size: 20px;
+	right: 3.3%;
+	top: 7.5%;
+}
+
+/*Menu desplegable*/
+nav{
+	text-align: center;
+	margin-top: -14px;
+}
+nav ul li{
+	background-color: #C19E21;
+	color: white;
+	display: inline-block;
+	position: relative;
+	list-style-type: none;
+	padding: 25px 5px;
+	margin: -2px;
+	width: 250px;
+	z-index: 5;
+	opacity: 0.989;
+}
+nav li:hover{
+	background-color: #DDBD67;
+	color: #000000;
+}
+nav a{
+	text-decoration: none;
+	color: inherit;
+}
+nav ul li ul{
+	display: none;
+}
+nav ul li:hover ul{
+	display: block;
+	color: inherit;
+	position: absolute;
+	padding: 25px 5px;
+	width: inherit;
+	left: -3.5px;
+}
+
+
+/*Section/Principal INDEX*/
+section#portada{
+	margin-bottom: 5%;
+}
+section#portada img{
+	display: block;
+	margin: 0 auto;
+}
+
+/*Section/Principal Subitems*/
+#principal{
+	margin-top: 5%;
+	margin-left: 5%;
+}
+div > table{
+	margin-left: 5%;
+	display: inline;
+}
+img.anillos{
+	width: 50%;
+	margin-right: 5%;
+}
+section p.trilogiatexto1{
+	font-weight: bold;
+	color: grey;
+}
+section p.trilogiatexto2{
+	color: grey;
+}
+/*Imagen libro, trilogias*/
+img#anillo1img{
+	width: 15%;
+	margin-left: 5%;
+}
+/*Info del libre, trilogias*/
+div.info{
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	left: 26%;
+	top: 40%;
+}
+/*Titulo del libro, trilogias*/
+p.titulo{
+	color: grey;
+	font-size: 20px;
+}
+/*Autor de libro, trilogias*/
+p.autor{
+	color: grey;
+	font-size: 15px;
+	margin-bottom: 20%;
+}
+/*Precio de libro, trilogias*/
+p.precio{
+	color: orange;
+	font-size: 20px;
+	position: relative;
+	top: -1%;
+}
+/*Sinopsis del libro, trilogias*/
+p.sinopsis{
+	font-size: 13px;
+}
+
+
+/*Aside*/
+aside#aside{
+	float: right;
+	width: 200px;
+	height: 200px;
+}
+aside#aside img#circulo{
+	position: absolute;
+	top: 35%;
+	width: 5%;
+	right: 2.7%;
+}
+aside#aside img#casa{
+	position: absolute;
+	width: 10%;
+	top: 45%;
+	right: 7px;
+}
+aside#aside img#verbo{
+	position: absolute;
+	width: 5%;
+	top: 65%;
+	right: 2.7%;
+}
+
+aside#aside span#textoCirculo{
+	position: absolute;
+	right: 2%;
+	top: 46%;
+}
+aside#aside span#textoVerbo{
+	position: absolute;
+	top: 76.5%;
+	right: 2.8%;
+}
+aside#aside img:hover{
+	animation: rotacion 2s linear infinite;
+}
+aside#aside img#casa:hover{
+	animation: casagira 2s linear infinite;
+}
+@keyframes rotacion{
+	0%{transform: rotate(0deg) scale(1,1);}
+	25%{transform: rotate(90deg) scale(1.05,1.05);}
+	50%{transform: rotate(180deg) scale(1.1,1.1);}
+	75%{transform: rotate(270deg) scale(1.05,1.05);}
+	100%{transform: rotate(360deg) scale(1,1);}
+}
+@keyframes casagira{
+	0%{transform: scale(1,1);}
+	25%{transform: scale(1.05,1.05);}
+	50%{transform: scale(1.1,1.1);}
+	75%{transform: scale(1.05,1.05);}
+	100%{transform: scale(1,1);}
+}
+/*Pie de pagina*/
+/*Posicion, espacio abajo e izquierda, ancho, alto y color de fondo*/
+footer#pie{
+	position: fixed;
+	bottom: 0;
+	/*left: 5%;*/
+	width: 99.15%;
+	height: 60px;
+	background-color: #9B9B9B;
+}
+/*Texto del pie, posicion, espacio arriba e izquierda y tamaño fuente*/
+footer#pie p{
+	position: absolute;
+	top: 0;
+	left: 1%;
+	font-size: 20px;
+}
+/*Imagenes redes sociales, enlaces, posicion, float, display, espacio derecha y arriba*/
+footer>div#enlacesPie{
+	position: relative;
+	float: right;
+	display: inline-block;
+	right: 1%;
+	top: 25%;
+}
