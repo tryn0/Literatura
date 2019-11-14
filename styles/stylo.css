@@ -1,10 +1,11 @@
 /*Importación de fuente*/
 @font-face{
-	font-family: GoldenHills;
-	src: url(../fonts/GoldenHills.ttf) format('truetype');
-	font-family: TKF;
-	src: url(../fonts/Type Keys Filled.ttf) format('truetype');
-	
+	font-family: 'Type Keys Filled';
+	src: url('../fonts/Type-Keys-Filled.ttf') format('truetype');
+}
+@font-face{
+	font-family: 'GoldenHills';
+	src: url('../fonts/GoldenHills.ttf') format('truetype');	
 }
 
 /*Ocultando todas las barras de desplazamiento*/
@@ -26,7 +27,7 @@ img#logo{
 }
 /*Primer texto a la derecha, fuente, posicion, tamaño, espacio derecha y arriba*/
 p#textoCabecera{
-	font-family: GoldenHills;
+	font-family: 'GoldenHills';
 	position: absolute;
 	font-size: 30px;
 	right: 3%;
@@ -34,7 +35,7 @@ p#textoCabecera{
 }
 /*Mi nombre a la derecha, fuente, posicion, tamaño, espacio derecha y arriba*/
 p#nombreCabecera{
-	font-family: GoldenHills;
+	font-family: 'GoldenHills';
 	position: absolute;
 	font-size: 20px;
 	right: 3.3%;
@@ -241,7 +242,7 @@ form{
 	color: white;
 	width: 25%;
 	margin-left: 37%;
-	font-family: TKF;
+	font-family: 'Type Keys Filled';
 }
 form h1{
 	text-align: center;
