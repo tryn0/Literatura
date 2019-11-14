@@ -2,9 +2,10 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<link rel="icon" type="image/png" href="../images/favicon.ico">
 		<link rel="stylesheet" type="text/css" href="../styles/stylo.css">
-		<title>Jordi Sierra i Fabra</title>
+		<title>Formulario</title>
 	</head>
 	<body>
 		<header id="cabecera">
@@ -46,62 +47,72 @@
 		</nav>
 		<section>
 			<div id="principal">
-				<div class="libro">
-					<img  id="anillo1img" src="../images/jordi.jpg">
-				</div>
-				<div class="infoautor">
-					<p class="titulo">Jordi Sierra i Fabra</p>
-					<p class="autorlibro">26 de Julio de 1947 Barcelona, España</p>
-					
-					<p class="sinopsisautor">Jordi Sierra i Fabra nació en Barcelona el 26 de julio de 1947. Tiene una clara y firme vocación de escritor desde muy joven, pues confiesa que dio sus primeros pasos con tan sólo ocho años de edad. Con doce escribió su primera novela larga, de quinientas páginas. Sus padres se mostraron poco entusiasmados con esta actividad, puesto que no confiaban en la profesión de escritor como un trabajo con futuro. Cuando terminó el bachillerato empezó a trabajar en una empresa de construcción. Tuvo sus primeras incursiones profesionales en la música, otra de sus grandes pasiones. Fue uno de los fundadores del programa de la Cadena Ser "El Gran Musical", y en 1970 abandonó los estudios para convertirse en comentarista musical, lo que le permitió viajar por todo el mundo con grupos y artistas del momento para cubrir sus actuaciones y escribir reportajes.
-
-					Igualmente fue uno de los miembros fundadores de la revista Super Pop en 1977, dedicada a la música joven. En 1978, y tras nueve años, dimitió del puesto de director de Disco Expres, y fue finalista del Premio Planeta de Novela. Su dedicación a la literatura se incrementó entonces.
-
-					Sus obras se sumaron una tras otra, al igual que los reconocimientos que ha cosechado a lo largo de su carrera. Algunos de sus libros han sido adaptados al teatro y al cine, y es uno de los autores más vendidos en nuestro idioma.</p>
-				</div>
-				<br>
-				<br>
-				<br>
-				<br>
-				<table border="1">
-					<tr>
-						<th>Título del libro</th>
-						<th>Año del libro</th>
-					</tr>
-					<tr>
-						<td>Kafka y la muñeca viajera</td>
-						<td>2006</td>
-					</tr>
-					<tr>
-						<td>Llamando a las puertas del cielo</td>
-						<td>2006</td>
-					</tr>
-					<tr>
-						<td>El asesinato de la profesora de lengua</td>
-						<td>2007</td>
-					</tr>
-					<tr>
-						<td>Lágrimas de sangre</td>
-						<td>2008</td>
-					</tr>
-					<tr>
-						<td>Trilogía de las Tierras</td>
-						<td>2008</td>
-					</tr>
-					<tr>
-						<td>Al sur de ninguna parte</td>
-						<td>2011</td>
-					</tr>
-					<tr>
-						<td>La modelo descalza</td>
-						<td>2010</td>
-					</tr>
-					<tr>
-						<td>El misterio del sello millonario</td>
-						<td>2013</td>
-					</tr>
-				</table>
-				<p class="masLibros">Para ver sus 973 libros visita <a href="https://www.todostuslibros.com/autor/jordi-sierra-i-fabra" target="_blank">esta web.</a></p>
+				<form method="POST" action="mailto:tryn0.github@gmail.com">
+					<table>
+						<h1>Ven a las ofertas del círculo</h1>
+						<tr>
+							<td><p>Nombre:</p></td>
+							<td><input type="text" name="Nombre" required autofocus></td>
+						</tr>
+						<tr>
+							<td><p>Email:</p></td>
+							<td><input type="email" name="Email" placeholder="correo@correo.com" required></td>
+						</tr>
+						<tr>
+							<td><p>Género:</p></td>
+							<td>
+								<select name="genero" required>
+									<option>Ficción</option>
+									<option>Acción</option>
+									<option>Infantil</option>
+									<option>Aventuras</option>
+									<option>Policíaca</option>
+									<option>Novela Histórica</option>
+									<option>Biográfica</option>
+									<option>Romática</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td><p>¿En qué libro está interesado?</p></td>
+							<td><input type="text" name="libroInteresado" required></td>
+						</tr>
+						<tr>
+							<td><p>Precio máximo:</p></td>
+							<td><input type="number" name="precioMax" required min="0" max="1000"></td>
+						</tr>
+						<tr>
+							<td><p>Sexo:</p></td>
+							<td>
+								<p>Hombre</p><input type="radio" name="sexo" value="hombre" required>
+								<br>
+								<p>Mujer</p><input type="radio" name="sexo" value="mujer" required>
+							</td>
+						</tr>
+						<tr>
+							<td><p>Teléfono contacto:</p></td>
+							<td><input type="tel" name="telefonoContacto" required></td>
+						</tr>
+						<tr>
+							<td><p>Fecha Nacimiento:</p></td>
+							<td><input type="date" name="fechaNacimiento" required></td>
+						</tr>
+						<tr>
+							<td><p>Comentario:</p></td>
+							<td><textarea rows="10" cols="25" required></textarea></td>
+						</tr>
+						<tr>
+							<td></td>
+						</tr>
+						<!--Para hacer espacio entre el formulario y el botón-->
+						<tr>
+							<td></td>
+						</tr>
+						<tr>
+							<td><input type="submit" name="Enviar" id="enviar"></td>
+						</tr>
+					</table>
+				</form>
 			</div>
 		</section>
 		<aside id="aside">

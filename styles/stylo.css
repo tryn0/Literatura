@@ -2,6 +2,9 @@
 @font-face{
 	font-family: GoldenHills;
 	src: url(../fonts/GoldenHills.ttf) format('truetype');
+	font-family: TKF;
+	src: url(../fonts/Type Keys Filled.ttf) format('truetype');
+	
 }
 
 /*Ocultando todas las barras de desplazamiento*/
@@ -17,7 +20,7 @@ header#cabecera{
 /*Logo de la cabecera, posicion, tamaño, espacio izquierda y arriba*/
 img#logo{
 	position: absolute;
-	width: 10%;
+	width: 3%;
 	left: 1.25%;
 	top: 2.5%;
 }
@@ -125,6 +128,7 @@ div.infoautor{
 	position: absolute;
 	left: 26%;
 	top: 37%;
+	margin-bottom: 2%;
 }
 /*Titulo del libro, trilogias*/
 p.titulo{
@@ -138,7 +142,7 @@ p.autor{
 	margin-bottom: 20%;
 }
 /*Info autor*/
-p.autor{
+p.autorlibro{
 	color: grey;
 	font-size: 15px;
 	margin-bottom: 10%;
@@ -161,6 +165,17 @@ p.sinopsisautor{
 p.masLibros{
 	position: relative;
 	left: 5%;
+}
+#tablalibrosreverte{
+	position: absolute;
+	top: 95%;
+	margin-bottom: 10%;
+	left: 7%;
+}
+p.masLibros2{
+	position: absolute;
+	top: 120%;
+	left: 12%;
 }
 
 
@@ -218,6 +233,26 @@ aside#aside img#casa:hover{
 	50%{transform: scale(1.1,1.1);}
 	75%{transform: scale(1.05,1.05);}
 	100%{transform: scale(1,1);}
+}
+
+/*Formulario*/
+form{
+	background-color: black;
+	color: white;
+	width: 25%;
+	margin-left: 37%;
+	font-family: TKF;
+}
+form h1{
+	text-align: center;
+}
+form p{
+	display: inline-block;
+	font-size: 20px;
+}
+form #enviar{
+	margin-left: 100%;
+	border-radius: 5px;
 }
 /*Pie de pagina*/
 /*Posicion, espacio abajo e izquierda, ancho, alto y color de fondo*/
